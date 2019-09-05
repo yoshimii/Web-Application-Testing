@@ -24,8 +24,13 @@ class Buttons extends React.Component {
     }
 
     foul = () => {
-        this.setState({foul: this.state.foul += 1})
-        console.log(this.state.foul)
+        if(this.state.strike === 0 || this.state.strike === null || this.state.strike === 1) {
+            this.setState({strike: this.state.strike += 1})
+            console.log(this.state.strike)
+        }else if (this.state.strike === 2){
+        this.setState({strike: this.state.strike = 2})
+        console.log(this.state.strike)
+        }
     }
 
 
