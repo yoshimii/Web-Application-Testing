@@ -1,13 +1,13 @@
 import React from 'react';
-
+import Display from './Display';
 class Buttons extends React.Component {
 
     constructor() {
         super();
         this.state = {
 
-            strike: null,
-            ball: null,
+            strike: 0,
+            ball: 0,
             foul: null,
             hit: null
         };
@@ -53,6 +53,7 @@ class Buttons extends React.Component {
 
     render() {
         return([
+            <Display ball={this.state.ball} strike={this.state.strike}/>,
             <button onClick={
                     () => this.strike()
                 }
