@@ -4,10 +4,10 @@ class Buttons extends React.Component {
 
     render() {
         return([
-        <button>Strike</button>,
-        <button>Ball</button>,
-        <button>Foul</button>,
-        <button>Hit</button>
+        <button onClick={() =>} className=''>Strike</button>,
+        <button onClick={() =>} className=''>Ball</button>,
+        <button onClick={() =>} className=''>Foul</button>,
+        <button onClick={() =>} className=''>Hit</button>
         ])
     }
 }
