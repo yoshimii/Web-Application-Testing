@@ -14,17 +14,30 @@ class Buttons extends React.Component {
     }
 
     strike = () => {
+        if (this.state.strike === 2) {
+            this.setState({
+                strike: 0
+            })
+        }else {
+
         this.setState({
             strike: this.state.strike += 1
         })
         console.log(this.state.strike);
     }
+    }
 
     ball = () => {
+        if (this.state.ball === 3) {
+            this.setState({
+                ball: 0
+            })
+        }else  {
         this.setState({
             ball: this.state.ball += 1
         })
         console.log(this.state.ball)
+    }
     }
 
     foul = () => {
