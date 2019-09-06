@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { render, fireEvent, waitForDomChange } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect'
-import Buttons from './Components/Buttons';
+import Buttons, { abstractedStrike } from './Components/Buttons';
 import Display from './Components/Display';
 
 test('tests that clicking strike button fires a click', () => {
@@ -20,7 +20,9 @@ test('displays the count', () => {
   expect(getByTestId('strike-count')).toHaveTextContent('Strikes');
 })
 
-test('function increments strikes according to baseball rules')
+test('function resets Strike value', () => {
+  expect(abstractedStrike(2)).toBe(0);
+})
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

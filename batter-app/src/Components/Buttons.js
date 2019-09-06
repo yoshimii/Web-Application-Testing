@@ -13,6 +13,7 @@ class Buttons extends React.Component {
         };
     }
 
+    
     strike = () => {
         if (this.state.strike === 2) {
             this.setState({
@@ -87,3 +88,12 @@ class Buttons extends React.Component {
     }
 }
 export default Buttons;
+
+export const abstractedStrike = (currentVal) => {
+    if(currentVal === 2) {
+        currentVal = 0;
+    }
+    return currentVal;
+}
+
+
