@@ -12,8 +12,8 @@ class Display extends React.Component {
 
     render(){
         return ([
-            <p>Balls: {this.props.ball}</p>,
-            <p>Strike: {this.props.strike}</p>,
+            <p data-testid='ball-count'>Balls: {this.props.ball}</p>,
+            <p data-testid='strike-count'>Strikes:{this.props.strike}</p>,
            
         ])
     }

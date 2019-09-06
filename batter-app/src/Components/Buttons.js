@@ -57,7 +57,7 @@ class Buttons extends React.Component {
             <button onClick={
                     () => this.strike()
                 }
-                className='strike-action'>Strike</button>,
+                className='strike-action' data-testid= 'strike'>Strike</button>,
             <button onClick={
                     () => this.ball()
                 }
