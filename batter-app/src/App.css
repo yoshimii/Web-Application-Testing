@@ -28,6 +28,7 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   border: none;
+  cursor: pointer;
 }
 
 .strike-btn {
