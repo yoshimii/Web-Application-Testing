@@ -10,11 +10,10 @@ class Display extends React.Component {
         }
     }
 
-
     render(){
         return ([
-            <p>Balls:{this.state.ball}</p>,
-            <p>Strike:{this.state.strike}</p>,
+            <p>Balls: {this.props.ball}</p>,
+            <p>Strike: {this.props.strike}</p>,
            
         ])
     }

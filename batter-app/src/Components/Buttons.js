@@ -2,8 +2,8 @@ import React from 'react';
 import Display from './Display';
 class Buttons extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
 
             strike: 0,
