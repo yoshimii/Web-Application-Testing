@@ -3,13 +3,18 @@ import Buttons from './Components/Buttons';
 import './App.css';
 
 function App() {
-  return (
+  return ([
     <div className="App">
       <header className="App-header">
-    <Buttons />
-      </header>
-    </div>
-  );
+        <Buttons />
+        <h1>Astros</h1>
+        </header>
+    </div>,
+
+      <div className='stripe'></div>,
+      <div></div>,
+      <div></div>,
+  ]);
 }
 
 export default App;

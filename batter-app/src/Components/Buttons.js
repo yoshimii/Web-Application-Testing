@@ -71,19 +71,19 @@ class Buttons extends React.Component {
             <button onClick={
                     () => this.strike()
                 }
-                className='strike-action' data-testid= 'strike'>Strike</button>,
+                className='strike-btn' data-testid= 'strike'>Strike</button>,
             <button onClick={
                     () => this.ball()
                 }
-                className='ball-action'>Ball</button>,
+                className='ball-btn'>Ball</button>,
             <button onClick={
                     () => this.foul()
                 }
-                className='foul-action'>Foul</button>,
+                className='foul-btn'>Foul</button>,
             <button onClick={
                     () => this.hit()
                 }
-                className='hit-action'>Hit</button>
+                className='hit-btn'>Hit</button>
         ])
     }
 }
